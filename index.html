@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>X Sound - Seu Estilo, Seu Som</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    :root {
+      --primary-color: #d32f2f;
+      --secondary-color: #121212;
+      --accent-color: #ff5252;
+      --background-color: #1b1b1b;
+      --text-color: #e0e0e0;
+      --section-bg-alt: #2a2a2a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      user-select: none;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.7);
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    header img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #ccc;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .benefit-section {
+      background-color: var(--section-bg-alt);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgb(0 0 0 / 0.5);
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .benefit-section:hover {
+      box-shadow: 0 8px 32px rgb(255 82 82 / 0.8);
+    }
+
+    .benefit-icon {
+      font-size: 3.5rem;
+      color: var(--accent-color);
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .benefit-text {
+      flex-grow: 1;
+    }
+
+    .benefit-title {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .benefit-desc {
+      font-size: 1.1rem;
+      color: #ddd;
+      line-height: 1.4;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-size: 1.25rem;
+      padding: 0.75rem 2.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 8px 14px rgb(211 47 47 / 0.6);
+      transition: background-color 0.25s ease, box-shadow 0.25s ease;
+      user-select: none;
+      width: 220px;
+      text-align: center;
+      max-width: 100%;
+      min-width: 140px;
+    }
+
+    .btn:hover {
+      background: var(--accent-color);
+      box-shadow: 0 12px 18px rgb(255 82 82 / 0.8);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #666;
+      user-select: none;
+      border-top: 1px solid #440000;
+      margin-top: 4rem;
+    }
+
+    .icon-style::before { content: "🎨"; margin-right: 12px; }
+    .icon-ai::before { content: "🤖"; margin-right: 12px; }
+    .icon-interface::before { content: "📱"; margin-right: 12px; }
+    .icon-eco::before { content: "🌱"; margin-right: 12px; }
+    .icon-wireless::before { content: "⚡"; margin-right: 12px; }
+
+    @media (max-width: 600px) {
+      .benefit-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .benefit-icon {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-xsound.jpg" alt="Logo da X Sound" />
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Seu Estilo, Seu Som</h1>
+      <p>Experimente fones de ouvido que acompanham seu estilo, tecnologia de ponta e sustentabilidade.</p>
+    </section>
+
+    <section class="benefit-section" tabindex="0" aria-label="Personalização do seu estilo">
+      <div class="benefit-icon icon-style" aria-hidden="true"></div>
+      <div class="benefit-text">
+        <h2 class="benefit-title">Personalização do seu estilo</h2>
+        <p class="benefit-desc">Fones customizáveis para combinar com a sua personalidade e estilo únicos.</p>
+      </div>
+    </section>
+
+    <section class="benefit-section" tabindex="0" aria-label="Botão para utilizar AI">
+      <div class="benefit-icon icon-ai" aria-hidden="true"></div>
+      <div class="benefit-text">
+        <h2 class="benefit-title">Botão para utilizar AI</h2>
+        <p class="benefit-desc">Integre inteligência artificial para aprimorar sua experiência sonora com apenas um toque.</p>
+      </div>
+    </section>
+
+    <section class="benefit-section" tabindex="0" aria-label="Interface própria">
+      <div class="benefit-icon icon-interface" aria-hidden="true"></div>
+      <div class="benefit-text">
+        <h2 class="benefit-title">Interface própria</h2>
+        <p class="benefit-desc">Aplicativo exclusivo para controle total do seu som e configurações personalizadas.</p>
+      </div>
+    </section>
+
+    <section class="benefit-section" tabindex="0" aria-label="Material reciclável e biodegradável">
+      <div class="benefit-icon icon-eco" aria-hidden="true"></div>
+      <div class="benefit-text">
+        <h2 class="benefit-title">Material reciclável e biodegradável</h2>
+        <p class="benefit-desc">Compromisso com o meio ambiente usando materiais sustentáveis de alta qualidade.</p>
+      </div>
+    </section>
+
+    <section class="benefit-section" tabindex="0" aria-label="Carregamento por indução direto do celular">
+      <div class="benefit-icon icon-wireless" aria-hidden="true"></div>
+      <div class="benefit-text">
+        <h2 class="benefit-title">Carregamento por indução direto do celular</h2>
+        <p class="benefit-desc">Maior praticidade com carregamento wireless usando seu próprio smartphone.</p>
+      </div>
+    </section>
+
+    <section class="button-container" aria-label="Botões de ação">
+      <button class="btn" id="buyBtn">Comprar Já</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2024 X Sound - Todos os direitos reservados
+  </footer>
+
+  <script>
+    document.getElementById('buyBtn').addEventListener('click', function() {
+      window.location.href = 'customize.html';
+    });
+  </script>
+</body>
+</html>
